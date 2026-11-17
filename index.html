@@ -1,12 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tusisabes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUSISABES | Zapatillas Clásicas & Streetwear</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>
+
+  <!-- Capa de textura granulada sutil en toda la pantalla -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navegación Glassmorphism -->
+  <header class="navbar">
+    <a href="#" class="logo">TUSI<span>SABES</span></a>
+    <nav class="nav-links">
+      <a href="#coleccion">Colección</a>
+      <a href="#esencia">Esencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20quiero%20consultar%20por%20un%20par%20clásico" target="_blank" class="btn-nav-wa">
+      Escríbenos
+    </a>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">CLÁSICOS DE CALLE • TUSISABES</span>
+      <h1>SILUETAS QUE<br>NUNCA MUEREN.</h1>
+      <p>Selección curada de los pares más icónicos. Gamuza gruesa, punteras legendarias y comodidad retro para dominar el asfalto.</p>
+      <div class="hero-actions">
+        <a href="#coleccion" class="btn-primary">Ver Modelos</a>
+        <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20busco%20asesoría%20para%20elegir%20unas%20zapatillas" target="_blank" class="btn-whatsapp">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glow-circle"></div>
+      <div class="sneaker-stage">
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80" alt="Zapatilla Clásica" class="floating-sneaker">
+        <div class="floating-tag tag-1">GAMUZA & CUERO</div>
+        <div class="floating-tag tag-2">100% ESTILO RETRO</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinta Infinita Animada (Marquee CSS) -->
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <span>★ PUMA SUEDE XL</span>
+      <span>★ ADIDAS CAMPUS</span>
+      <span>★ ADIDAS SUPERSTAR</span>
+      <span>★ NEW BALANCE 530</span>
+      <span>★ TUSISABES SNEAKERS</span>
+      <span>★ PUMA SUEDE XL</span>
+      <span>★ ADIDAS CAMPUS</span>
+      <span>★ ADIDAS SUPERSTAR</span>
+      <span>★ NEW BALANCE 530</span>
+      <span>★ TUSISABES SNEAKERS</span>
+    </div>
+  </div>
+
+  <!-- Catálogo de Zapatillas -->
+  <section id="coleccion" class="catalog">
+    <div class="section-header">
+      <h2>LOS INFALTABLES</h2>
+      <p>Elige tu silueta favorita y consulta tallas disponibles directo al WhatsApp.</p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Tarjeta 1: Puma Suede XL -->
+      <article class="card">
+        <div class="card-badge">TENDENCIA CHUNKY</div>
+        <div class="card-img-box">
+          <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" alt="Puma Suede XL">
+        </div>
+        <div class="card-info">
+          <span class="card-year">PUMA • SKATE & STREET</span>
+          <h3>PUMA SUEDE XL</h3>
+          <p>Lengüeta acolchada oversized, pasadores anchos y gamuza de alto impacto inspirada en el breakdance.</p>
+          <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20me%20interesan%20las%20PUMA%20SUEDE%20XL.%20¿Qué%20tallas%20tienen?" target="_blank" class="card-wa-btn">
+            Pedir info por WhatsApp ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2: Adidas Campus -->
+      <article class="card">
+        <div class="card-badge">MÁS PEDIDO</div>
+        <div class="card-img-box">
+          <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=800&q=80" alt="Adidas Campus">
+        </div>
+        <div class="card-info">
+          <span class="card-year">ADIDAS • 2000s HERITAGE</span>
+          <h3>ADIDAS CAMPUS</h3>
+          <p>Silueta robusta con las tres franjas dentadas en contraste y acabado en gamuza suave.</p>
+          <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20me%20interesan%20las%20ADIDAS%20CAMPUS.%20¿Qué%20tallas%20tienen?" target="_blank" class="card-wa-btn">
+            Pedir info por WhatsApp ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3: Adidas Superstar -->
+      <article class="card">
+        <div class="card-badge">ÍCONO ABSOLUTO</div>
+        <div class="card-img-box">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Adidas Superstar">
+        </div>
+        <div class="card-info">
+          <span class="card-year">ADIDAS • DESDE 1969</span>
+          <h3>ADIDAS SUPERSTAR</h3>
+          <p>La legendaria puntera de goma con relieve (Shell Toe) y cuero liso que nunca pasa de moda.</p>
+          <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20me%20interesan%20las%20ADIDAS%20SUPERSTAR.%20¿Qué%20tallas%20tienen?" target="_blank" class="card-wa-btn">
+            Pedir info por WhatsApp ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4: New Balance 530 -->
+      <article class="card">
+        <div class="card-badge">COMODIDAD RETRO</div>
+        <div class="card-img-box">
+          <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80" alt="New Balance 530">
+        </div>
+        <div class="card-info">
+          <span class="card-year">NEW BALANCE • RUNNING 90s</span>
+          <h3>NEW BALANCE 530</h3>
+          <p>Malla transpirable, detalles metalizados y amortiguación ABZORB para caminar todo el día.</p>
+          <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20me%20interesan%20las%20NEW%20BALANCE%20530.%20¿Qué%20tallas%20tienen?" target="_blank" class="card-wa-btn">
+            Pedir info por WhatsApp ↗
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Banner de Esencia y Contacto Directo -->
+  <section id="esencia" class="cta-banner">
+    <div class="cta-box">
+      <h2>¿BUSCAS OTRO COLORWAY O TALLA?</h2>
+      <p>En <strong>Tusisabes</strong> atendemos directo, sin carritos complicados. Escríbenos al WhatsApp y te mandamos fotos reales y disponibilidad al toque.</p>
+      <a href="https://wa.me/51999999999?text=Hola%20Tusisabes,%20quiero%20consultar%20por%20un%20modelo" target="_blank" class="btn-whatsapp btn-large">
+        Chatear ahora por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="footer-content">
+      <div class="logo">TUSI<span>SABES</span></div>
+      <p>© 2026 Tusisabes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp con Onda Expansiva -->
+  <a href="https://wa.me/51915902113?text=Hola%20Tusisabes,%20vengo%20de%20su%20página%20web" target="_blank" class="floating-wa" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+  </a>
+
 </body>
 </html>
