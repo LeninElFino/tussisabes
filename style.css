@@ -132,12 +132,15 @@ ul { list-style: none; }
 .hero__glow--2 { width: 300px; height: 300px; background: #6a2cff; bottom: -80px; left: -60px; opacity: .18; animation-delay: -3s; }
 .hero__inner { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 3rem; }
 .hero__title {
-  font-family: var(--font-display);
-  font-size: clamp(3.4rem, 9vw, 7.4rem);
-  line-height: .92;
-  letter-spacing: -.035em;
+  font-family: "Syne", var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 6vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -.01em;
   margin: 1rem 0 1.4rem;
 }
+.hero__brand { text-transform: none; white-space: nowrap; }
 .hero__lead { color: var(--muted); font-size: 1.1rem; max-width: 46ch; margin-bottom: 2rem; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 1rem; }
 
@@ -216,10 +219,16 @@ ul { list-style: none; }
 #f-all:checked ~ .filters label[for="f-all"],
 #f-nike:checked ~ .filters label[for="f-nike"],
 #f-adidas:checked ~ .filters label[for="f-adidas"],
-#f-puma:checked ~ .filters label[for="f-puma"] { background: var(--pink); border-color: var(--pink); color: #fff; box-shadow: 0 6px 20px var(--pink-soft); }
+#f-puma:checked ~ .filters label[for="f-puma"],
+#f-nb:checked ~ .filters label[for="f-nb"],
+#f-lv:checked ~ .filters label[for="f-lv"],
+#f-straye:checked ~ .filters label[for="f-straye"] { background: var(--pink); border-color: var(--pink); color: #fff; box-shadow: 0 6px 20px var(--pink-soft); }
 #f-nike:checked ~ .grid .card:not(.nike),
 #f-adidas:checked ~ .grid .card:not(.adidas),
-#f-puma:checked ~ .grid .card:not(.puma) { display: none; }
+#f-puma:checked ~ .grid .card:not(.puma),
+#f-nb:checked ~ .grid .card:not(.nb),
+#f-lv:checked ~ .grid .card:not(.lv),
+#f-straye:checked ~ .grid .card:not(.straye) { display: none; }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 1.6rem; }
 
@@ -284,18 +293,18 @@ ul { list-style: none; }
 
 /* ---------- Marcas ---------- */
 .brands { background: var(--bg-2); padding: 90px 0; border-block: 1px solid var(--line); }
-.brands__grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 2.2rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.brands__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); margin-top: 2.2rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .brand {
-  display: grid; place-items: center;
-  padding: 3.2rem 1rem;
+  display: grid; place-items: center; text-align: center;
+  padding: 3rem 1rem;
+  background: var(--bg-2);
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 4vw, 2.8rem);
-  letter-spacing: -.03em;
-  border-right: 1px solid var(--line);
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  letter-spacing: -.01em;
+  text-transform: uppercase;
   color: #fff;
   transition: background .3s, color .3s;
 }
-.brand:last-child { border-right: 0; }
 .brand:hover { background: var(--pink); color: #0a0a0c; }
 
 /* ---------- Contacto y footer ---------- */
@@ -371,9 +380,8 @@ ul { list-style: none; }
   .sizes li { min-width: 30px; font-size: .7rem; padding: .2rem .25rem; }
   .card .btn { font-size: .7rem; padding: .7rem .5rem; gap: .35rem; }
   .card .btn svg { width: 16px; height: 16px; }
-  .brands__grid { grid-template-columns: 1fr; }
-  .brand { border-right: 0; border-bottom: 1px solid var(--line); padding: 2rem 1rem; }
-  .brand:last-child { border-bottom: 0; }
+  .brands__grid { grid-template-columns: 1fr 1fr; }
+  .brand { padding: 1.8rem .6rem; }
   .footer__inner { justify-content: center; text-align: center; }
 }
 
